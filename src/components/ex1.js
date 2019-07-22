@@ -4,7 +4,7 @@
 import React from 'react';
 
 export default () => {
-    let items = [];
+    const items = [];
 
     ["anything", "that", "i want"].forEach(x => items.push(<li>{x}</li>));
 
