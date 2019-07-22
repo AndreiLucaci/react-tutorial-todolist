@@ -25,8 +25,6 @@ class ExSidebar extends React.Component {
           >
             Exercice 1
           </span>
-          <span className="ExSidebar-block-item ExSidebar-button">Link 1</span>
-          <span className="ExSidebar-block-item ExSidebar-button">Link 1</span>
         </div>
       </div>
     );
