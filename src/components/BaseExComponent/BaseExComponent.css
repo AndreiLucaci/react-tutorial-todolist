@@ -1,0 +1,8 @@
+.BaseExComponent {
+  text-align: center;
+}
+
+.BaseExComponent-header {
+  display: flex;
+  flex-direction: column;
+}
