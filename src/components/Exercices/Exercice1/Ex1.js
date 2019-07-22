@@ -3,7 +3,7 @@
 
 import React from "react";
 
-import BaseExComponent from "./BaseExComponent/BaseExComponent";
+import BaseExComponent from "../../BaseExComponent/BaseExComponent";
 
 class Ex1 extends React.Component {
   constructor(props) {
