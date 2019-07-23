@@ -10,15 +10,17 @@
 
 .App-body {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.App-content {
+  margin-left: 200px;
 }
 
 .App-exercice-area {
   background:#F3FAFF;
   margin: 0 auto;
-  min-width: 100vmin;
   border: #D3FBD8 4px solid;
 }
 
