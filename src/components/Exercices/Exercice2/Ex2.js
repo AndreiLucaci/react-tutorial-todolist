@@ -1,6 +1,8 @@
 import React, { PureComponent } from "react";
 import BasExComponent from "../../BaseExComponent/BaseExComponent";
 
+import MyInfo from "./MyInfo";
+
 import "./Ex2.css";
 
 class Ex2 extends React.Component {
@@ -23,7 +25,9 @@ class Ex2 extends React.Component {
     );
   }
 
-  buildUp() {}
+  buildUp() {
+      return <MyInfo />
+  }
 }
 
 export default Ex2;

@@ -16,7 +16,7 @@ class App extends React.Component {
   }
 
   renderCallback(component) {
-    this.setState( { activeComponent : component } );
+    this.setState({ activeComponent: component });
   }
 
   render() {
@@ -24,27 +24,29 @@ class App extends React.Component {
       <div className="App">
         <div className="App-body">
           <ExSidebar callback={this.renderCallback} />
-          <h2>
-            <img src={logo} className="App-logo" alt="logo" />
-            This app is following the tutorial linked here:
-            <img src={logo} className="App-logo" alt="logo" />
-          </h2>
-          <a
-            href="https://youtu.be/DLX62G4lc44"
-            className="App-link"
-            target="_blank"
-            rel="noopener noreferencer"
-          >
-            Learn React.js - Full Course for Beginners - Tutorial 2019
-          </a>
+          <div className="App-content">
+            <h2>
+              <img src={logo} className="App-logo" alt="logo" />
+              This app is following the tutorial linked here:
+              <img src={logo} className="App-logo" alt="logo" />
+            </h2>
+            <a
+              href="https://youtu.be/DLX62G4lc44"
+              className="App-link"
+              target="_blank"
+              rel="noopener noreferencer"
+            >
+              Learn React.js - Full Course for Beginners - Tutorial 2019
+            </a>
 
-          <header className="App-header">
-            <p>Exercice area</p>
-          </header>
+            <header className="App-header">
+              <p>Exercice area</p>
+            </header>
 
-          <div className="App-exercice-area">
-            {/* This is the part that exercices will pe loaded from: */}
-            {this.state.activeComponent}
+            <div className="App-exercice-area">
+              {/* This is the part that exercices will pe loaded from: */}
+              {this.state.activeComponent}
+            </div>
           </div>
         </div>
       </div>

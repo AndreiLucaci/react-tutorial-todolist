@@ -1,0 +1,9 @@
+.MyInfo-body {
+    border-radius: 15px 50px;
+    background: #8DD881;
+    padding: 20px; 
+    width: 50vmin;
+    height: 25vmin; 
+    text-align: center;
+    margin: 0 auto;
+}

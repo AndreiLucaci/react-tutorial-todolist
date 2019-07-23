@@ -4,8 +4,10 @@ import "./BaseExComponent.css";
 export default props => {
   return (
     <div className="BaseExComponent">
-      <div className="BaseExComponent-header">Objective: {props.objective}</div>
-      {props.children}
+      <h4>Objective: </h4>
+      <div className="BaseExComponent-header">{props.objective}</div>
+      <h4>Result: </h4>
+      <div className="BaseExComponent-body">{props.children}</div>
     </div>
   );
 };
