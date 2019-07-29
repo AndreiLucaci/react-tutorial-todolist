@@ -1,0 +1,9 @@
+.Footer-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.Footer-content {
+    margin: 0 auto;
+}

@@ -1,0 +1,17 @@
+
+.Main-exercice-area {
+    background: #f3faff;
+    margin: 0 auto;
+    border: #d3fbd8 4px solid;
+  }
+  
+  .Main-content {
+    margin-left: 200px;
+  }
+  
+  .Main-header {
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
