@@ -22,9 +22,13 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    axios.get("https://jsonplaceholder.typicode.com/todos").then(res => this.setState({
-      todos: res.data
-    }));
+    axios
+      .get("https://jsonplaceholder.typicode.com/todos?_limit=10")
+      .then(res =>
+        this.setState({
+          todos: res.data
+        })
+      );
   }
 
   toggleComplete = id => {
@@ -40,21 +44,26 @@ class App extends React.Component {
   };
 
   addToDo = title => {
-    const newTodo = {
-      id: uuid.v4(),
-      title,
-      completed: false
-    };
-
-    this.setState({
-      todos: [...this.state.todos, newTodo]
-    });
+    axios
+      .post("https://jsonplaceholder.typicode.com/todos", {
+        title,
+        completed: false
+      })
+      .then(res => {
+        this.setState({
+          todos: [...this.state.todos, res.data]
+        });
+      });
   };
 
   delTodo = id => {
-    this.setState({
-      todos: [...this.state.todos.filter(todo => todo.id !== id)]
-    });
+    axios
+      .delete(`https://jsonplaceholder.typicode.com/todos/${id}`)
+      .then(res => {
+        this.setState({
+          todos: [...this.state.todos.filter(todo => todo.id !== id)]
+        });
+      });
   };
 
   render() {
